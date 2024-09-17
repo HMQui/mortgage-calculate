@@ -1,0 +1,399 @@
+.display-flex {
+  display: flex !important;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.display-block {
+  display: block !important;
+}
+
+.display-grid {
+  display: grid !important;
+}
+
+.color__white {
+  color: hsl(0, 0%, 100%) !important;
+}
+
+.bg-color__red {
+  background-color: hsl(4, 69%, 50%) !important;
+}
+
+.border__red {
+  border-color: hsl(4, 69%, 50%) !important;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.main-cart {
+  width: 100%;
+  grid-column: 3/11;
+  grid-row: 3/11;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+}
+.main-cart .required-input {
+  color: hsl(4, 69%, 50%);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.main-cart .input-container {
+  padding: 40px 30px;
+  grid-column: 1/7;
+  grid-row: 1/13;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-cart .input-container label {
+  font-size: 1.2rem;
+  color: hsl(200, 24%, 40%);
+  font-weight: 550;
+}
+.main-cart .input-container .header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.main-cart .input-container .header-container .header {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsl(202, 55%, 16%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.main-cart .input-container .header-container .clear-input {
+  border: none;
+  background: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  color: hsl(200, 24%, 40%);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main-cart .input-container .header-container .clear-input:hover {
+  color: hsl(200, 26%, 54%);
+}
+.main-cart .input-container .mortgage-amount-container .sub-input-container {
+  margin: 8px 0;
+  display: flex;
+  width: 100%;
+  border: 2px solid hsl(200, 24%, 40%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.main-cart .input-container .mortgage-amount-container .sub-input-container input {
+  min-width: 60%;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.main-cart .input-container .mortgage-amount-container .sub-input-container i {
+  background-color: hsl(202, 86%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.main-cart .input-container .mortgage-amount-container .sub-input-container i {
+  padding: 5px 10px;
+}
+.main-cart .input-container .mortgage-amount-container .sub-input-container input {
+  min-width: 95%;
+}
+.main-cart .input-container .mortgage-amount-container .sub-input-container:has(input:focus) {
+  border-color: hsl(61, 70%, 52%);
+}
+.main-cart .input-container .mortgage-amount-container .sub-input-container:has(input:focus) i {
+  background-color: hsl(61, 70%, 52%);
+}
+.main-cart .input-container .mortgage-term-rate-container {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 8px;
+  grid-column-gap: 10px;
+  grid-template-areas: "label1 label2" "input1 input2" "required1 required2";
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-term {
+  grid-area: label1;
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-term-container {
+  grid-area: input1;
+  margin: 8px 0;
+  display: flex;
+  width: 100%;
+  border: 2px solid hsl(200, 24%, 40%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-term-container input {
+  min-width: 60%;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-term-container i {
+  background-color: hsl(202, 86%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-term-container i {
+  min-width: 30%;
+  font-weight: 550;
+  font-size: 1.3rem;
+  color: hsl(200, 26%, 54%);
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-term-container:has(input:focus) {
+  border-color: hsl(61, 70%, 52%);
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-term-container:has(input:focus) i {
+  background-color: hsl(61, 70%, 52%);
+  color: hsl(202, 55%, 16%);
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-rate {
+  grid-area: label2;
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-rate-container {
+  grid-area: input2;
+  margin: 8px 0;
+  display: flex;
+  width: 100%;
+  border: 2px solid hsl(200, 24%, 40%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-rate-container input {
+  min-width: 60%;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-rate-container i {
+  background-color: hsl(202, 86%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-rate-container i {
+  min-width: 20%;
+  font-weight: 550;
+  font-size: 1.3rem;
+  color: hsl(200, 26%, 54%);
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-rate-container:has(input:focus) {
+  border-color: hsl(61, 70%, 52%);
+}
+.main-cart .input-container .mortgage-term-rate-container .mortgage-rate-container:has(input:focus) i {
+  background-color: hsl(61, 70%, 52%);
+  color: hsl(202, 55%, 16%);
+}
+.main-cart .input-container .mortgage-term-rate-container .required1 {
+  grid-area: required1;
+}
+.main-cart .input-container .mortgage-term-rate-container .required2 {
+  grid-area: required2;
+}
+.main-cart .input-container .mortgage-type-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.main-cart .input-container .mortgage-type-container .type-input-container {
+  width: 100%;
+  border: 1px solid hsl(202, 55%, 16%);
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid hsl(200, 24%, 40%);
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.main-cart .input-container .mortgage-type-container .type-input-container input[type=checkbox] {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.main-cart .input-container .mortgage-type-container .type-input-container .checkmark {
+  height: 18px;
+  width: 18px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  border: 2px solid hsl(200, 24%, 40%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-cart .input-container .mortgage-type-container .type-input-container .checkmark::after {
+  content: "";
+  width: 8.5px;
+  height: 8.5px;
+  background-color: hsl(61, 70%, 52%);
+  position: absolute;
+  border-radius: 50%;
+  display: none;
+}
+.main-cart .input-container .mortgage-type-container .type-input-container:hover {
+  border-color: hsl(61, 70%, 52%);
+  background-color: #f7f8d5;
+}
+.main-cart .input-container .mortgage-type-container .type-input-container:hover .checkmark {
+  border-color: hsl(61, 70%, 52%);
+}
+.main-cart .input-container .mortgage-type-container .type-input-container input:checked ~ .checkmark::after {
+  display: block;
+}
+.main-cart .input-container .mortgage-type-container .type-input-container input:checked + .checkmark {
+  border-color: hsl(61, 70%, 52%);
+}
+.main-cart .input-container .mortgage-type-container .type-input-container:has(input:checked) {
+  border-color: hsl(61, 70%, 52%);
+  background-color: #f7f8d5;
+}
+.main-cart .input-container .submit-calculate {
+  margin-top: 14px;
+  width: 65%;
+  padding: 10px;
+  background-color: hsl(61, 70%, 52%);
+  border-radius: 25px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.main-cart .input-container .submit-calculate i {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/icon-calculator.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.main-cart .input-container .submit-calculate section {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.main-cart .input-container .submit-calculate:hover {
+  background-color: #dfe159;
+  box-shadow: 2px 2px 2px 2px #f7f8d5;
+}
+.main-cart .result-container {
+  grid-column: 7/13;
+  grid-row: 1/13;
+  background-color: hsl(202, 55%, 16%);
+  padding: 0 30px;
+  border-radius: 0 15px 15px 15%;
+}
+.main-cart .result-container .empty-result {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.main-cart .result-container .empty-result img {
+  width: 50%;
+  height: 50%;
+}
+.main-cart .result-container .empty-result h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.4rem;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.main-cart .result-container .empty-result p {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.main-cart .result-container .display-result {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+}
+.main-cart .result-container .display-result span {
+  font-size: 1.4rem;
+  color: hsl(202, 86%, 94%);
+  opacity: 0.6;
+}
+.main-cart .result-container .display-result .header {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.4rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.main-cart .result-container .display-result p {
+  color: hsl(202, 86%, 94%);
+  font-size: 1.4rem;
+  opacity: 0.6;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.main-cart .result-container .display-result .result-view {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  width: 100%;
+  background-color: #0b1c26;
+  border-radius: 5px;
+  border-top: 4px solid hsl(61, 70%, 52%);
+}
+.main-cart .result-container .display-result .result-view .monthly-repayments {
+  padding-bottom: 12px;
+  border-bottom: 0.1px solid hsl(200, 24%, 40%);
+}
+.main-cart .result-container .display-result .result-view .monthly-repayments .monthly-repayments__result {
+  font-size: 4.8rem;
+  color: hsl(61, 70%, 52%);
+}
+.main-cart .result-container .display-result .result-view .total-repayments {
+  padding-top: 18px;
+}
+.main-cart .result-container .display-result .result-view .total-repayments .total-repayments__result {
+  font-size: 2.4rem;
+  color: hsl(0, 0%, 100%);
+}/*# sourceMappingURL=index.css.map */

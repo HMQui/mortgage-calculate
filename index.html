@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <link rel="stylesheet" href="./assets/CSS/grid.css">
+  <link rel="stylesheet" href="./assets/CSS/base.css">
+  <link rel="stylesheet" href="./assets/CSS/index.css">
+  <link rel="stylesheet" href="./assets/CSS/responsive.css">
+</head>
+<body>
+  <main class="grid">
+    <div class="main-cart">
+      <form class="input-container" type="submit">
+        <article class="header-container">
+          <h2 class="header">Mortgage Calculator</h2>
+          <section class="clear-input">Clear All</section>
+        </article>
+        <div class="mortgage-amount-container">
+          <label for="mortgage-amount-input">Mortgage Amount</label>
+          <div class="sub-input-container">
+            <i>&#8364</i>
+            <input type="text" id="mortgage-amount-input" autocomplete="off">
+          </div>
+          <span class="required-input display-none" data-require=1>This filed is required</span>
+        </div>
+        <div class="mortgage-term-rate-container">
+          <label for="mortgage-term-input" class="mortgage-term">Mortgage Term</label>
+          <div class="mortgage-term-container">
+            <input type="text" id="mortgage-term-input" autocomplete="off">
+            <i>years</i>
+          </div>
+          <span class="required-input display-none required1" data-require=2>This filed is required</span>
+          <label for="mortgage-rate-input" class="mortgage-rate">Interest Rate</label>
+          <div class="mortgage-rate-container">
+            <input type="text" id="mortgage-rate-input" autocomplete="off">
+            <i>%</i>
+          </div> 
+          <span class="required-input display-none required2" data-require=3>This filed is required</span>
+        </div>
+        <div class="mortgage-type-container sub-input-container">
+          <label>Mortgage Type</label>
+          <label class="type-input-container" for="repayment-type">
+            <input type="checkbox" id="repayment-type">
+            <span class="checkmark"></span>
+            Repayment
+          </label>
+          <label class="type-input-container" for="interest-only-type">
+            <input type="checkbox" id="interest-only-type">
+            <span class="checkmark"></span>
+            Interest Only
+          </label>
+          <span class="required-input display-none" data-require=4>This filed is required</span>
+        </div>
+        <button class="submit-calculate" type="submit">
+          <i></i>
+          <section>Calculate Repayments</section>
+        </button>
+      </form>
+      <div class="result-container">
+        <div class="empty-result">
+          <img src="./assets/images/illustration-empty.svg" alt="">
+          <h2 class="header">Results shown here</h2>
+          <p>Complete the form and click "calculate repayments" 
+            to see what your monthly repayments would be.
+          </p>
+        </div>
+        <div class="display-result">
+          <h2 class="header">Your results</h2>
+          <p>Your results are shown below based on the information you provided. 
+            To adjust the results, edit the form and click "calculate repayments" again.
+          </p>
+          <div class="result-view">
+            <div class="monthly-repayments">
+              <span>Your monthly repayments</span>
+              <h1 class="monthly-repayments__result">123</h1>
+            </div>
+            <div class="total-repayments">
+              <span>Total you'll repay over the term</span>
+              <h3 class="total-repayments__result">123</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="./assets/JS/App.js"></script>
+</body>
+</html>

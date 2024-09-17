@@ -1,0 +1,29 @@
+@media (max-width: 1440px) and (min-width: 850px) {
+    .main-cart {
+        grid-column: 2 / 12;
+    }
+}
+
+@media (max-width: 849.999999px) and (min-width: 800px) {
+    .main-cart {
+        grid-column: 1 / 13;
+    }
+}
+
+@media (max-width: 799.999999px) and (min-width: 375px) {
+    .main-cart {
+        grid-column: 1 / 13;
+        border-radius: 0;
+        
+        .input-container {
+            grid-column: 1 / 13;
+            grid-row: 1 / 7;
+        }
+
+        .result-container {
+            grid-column: 1 / 13;
+            grid-row: 8 / 13;
+            border-radius: 0;
+        }
+    }
+}
