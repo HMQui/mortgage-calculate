@@ -10,7 +10,7 @@
     }
 }
 
-@media (max-width: 799.999999px) and (min-width: 375px) {
+@media (max-width: 799.999999px) and (min-width: 360px) {
     .main-cart {
         grid-column: 1 / 13;
         border-radius: 0;
